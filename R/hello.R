@@ -20,7 +20,10 @@ x<-sqrt(as.numeric(myname))
 
 
 
-hypotheek<-function(P=100000,I=5, L=30, T=30, A=0){
+hypotheek<-function(P=100000){
+I=5; L=30; T=30; A=0
+
+
 P=P-A
 N = L *12
 J = I/(12*100)
