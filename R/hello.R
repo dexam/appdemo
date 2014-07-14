@@ -21,6 +21,7 @@ x<-sqrt(as.numeric(myname))
 
 
 hypotheek<-function(P=100000){
+P<-as.numeric(P)
 I=5; L=30; T=30; A=0
 
 
@@ -42,7 +43,7 @@ i = i+1
 
 NET = M-(H*(T/100))
 
-return(list(balance=Q, monthly_payments_bruto=M,monthly_payments_netto=NET, interest_payments=H, capital_payments=C))
+return(list(balance=Q, monthly_payments_bruto=as.character(M),monthly_payments_netto=NET, interest_payments=H, capital_payments=C))
 
 }
 
