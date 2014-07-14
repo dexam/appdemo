@@ -17,10 +17,10 @@
         var myname = $("#namefield").val();
         
         //perform the request
-        var req = ocpu.rpc("hello", {
+        var req = ocpu.rpc("hypotheek", {
           myname : myname
         }, function(output){
-          $("#output").text(output.message);
+          $("#output").text(output.monthly_payments_bruto);
         });
         
         //if R returns an error, alert the error message
